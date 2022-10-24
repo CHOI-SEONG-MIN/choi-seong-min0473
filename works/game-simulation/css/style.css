@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+#wrap{
+    width: 687px;
+    margin: 0 auto;
+}
+
+h1{
+    height: 200px;
+    font-size: 50px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.game{
+    position: relative;
+    width: 100%;
+    height: 571px;
+    background-image: url(./../images/bg_1.png);
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.game>h2{
+    padding-top: 15px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 두더지 가림판 */
+.game>.part{
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 57px;
+    background-image: url(./../images/bg_part.png);
+}
+
+.game>.part1{top: 142px;}
+.game>.part2{top: 270px;}
+.game>.part3{top: 400px;}
+
+.game>.frame{
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 100px;
+}
+
+.game>.frame>img{
+    display: block;
+    width: 100%;
+}
+
+.game>button{
+    border: none;
+    outline: none;
+    background: none;
+
+    position: absolute;
+    left: 160px;
+    bottom: 20px;
+
+    width: 125px;
+    height: 50px;
+    text-indent: -9999px;
+
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.game>.score{
+    position: absolute;
+    left: 350px;
+    bottom: 40px;
+    color: white;
+    font-size: 70px;
+}
+
+address{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}

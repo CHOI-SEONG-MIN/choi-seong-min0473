@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script defer src="./js/function.js"></script>
+
+  <title>모기 잡기 시뮬레이터</title>
+</head>
+
+<body>
+  
+  <!-- 인트로 페이지 -->
+  <div id="wrap_intro">
+    <div class="container">
+      <h1>환영합니다!</h1>
+      <p>
+        이제 가을이네요. <br />
+        그런데 모기는 가을이 가장 극성이죠? <br />
+        조금 더워서 문 좀 열려고 하면 모기가 들어오고.. <br />
+        잠깐 쉬려고 눈 좀 감았는데 위잉 소리 들리고.. <br />
+        갑자기 가려워서 긁어보면 퉁퉁 부어있고.. <br />
+      </p>
+      <p>
+        모기를 더 이상 참을 수가 없는 당신은 <br />
+        파리채라는 무기를 들고,
+        <a class="goWrap" rel="noopener noreferrer" href="#">전쟁을 선포합니다.<span>▶</span></a>
+      </p>
+    </div>
+  </div>
+
+  <!-- 본 게임 -->
+  <div id="wrap">
+    <!-- 제목 -->
+    <header><h1>모기 잡기 시뮬레이션</h1></header>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- 본문 내용 -->
+    <section class="game">
+        <h2 class="sr-only">본문 내용</h2>
+
+        <div class="frame">방 이미지
+          <span class="mosquito">모기</span>
+        </div>
+        
+        <div class="container">
+          <button class="start">START</button>
+          <strong class="count">10</strong>
+          <strong class="score">
+            <span>0</span> 마리
+          </strong>
+
+          <!-- 전등 -->
+          <a class="light" rel="noopener noreferrer" href="#">전등 스위치</a>
+          <p>~전등 스위치~</p>
+        </div>
+
+        <div class="level">
+          <p>난이도</p>
+          <button class="levelchk Lv_1">1단계</button>
+          <button class="levelchk Lv_2">2단계</button>
+          <button class="levelchk Lv_3">3단계</button>
+        </div>
+
+        <!-- 게임 설명서 -->
+        <article class="explain_container">
+          <h3>게임 설명서</h3>
+
+          <ul>
+            <li>1. 단계를 먼저 선택한다.</li>
+            <li>2. START 버튼을 누른다.</li>
+            <li>* 단계에 따라 모기의 속도가 빨라진다.</li>
+          </ul>
+        </article>
+
+    </section>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- 저작권 -->
+    <footer><address>&copy; Designed by 3조</address></footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+#wrap {
+  width: 550px;
+  height: 550px;
+  margin: 0 auto;
+}
+#wrap .slides {
+  overflow: hidden;
+  position: relative;
+  height: 550px;
+}
+#wrap .slides > .slides-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.4s;
+  width: 3850px;
+}
+#wrap .slides > .slides-container > li {
+  position: relative;
+  width: 550px;
+}
+#wrap .slides > .slides-container > li:nth-child(1) div {
+  display: block;
+  left: 20px;
+  background-image: url(./../images/side_1.png);
+}
+#wrap .slides > .slides-container > li:nth-child(2) div {
+  background-image: url(./../images/side_2.png);
+}
+#wrap .slides > .slides-container > li:nth-child(3) div {
+  background-image: url(./../images/side_3.png);
+}
+#wrap .slides > .slides-container > li:nth-child(4) div {
+  background-image: url(./../images/side_4.png);
+}
+#wrap .slides > .slides-container > li:nth-child(5) div {
+  background-image: url(./../images/side_5.png);
+}
+#wrap .slides > .slides-container > li:nth-child(6) div {
+  background-image: url(./../images/side_6.png);
+}
+#wrap .slides > .slides-container > li:nth-child(7) div {
+  background-image: url(./../images/side_7.png);
+}
+#wrap .slides > .slides-container > li > a {
+  display: block;
+  height: 512px;
+}
+#wrap .slides > .slides-container > li > a > div {
+  display: none;
+  position: absolute;
+  left: -350px;
+  top: 67%;
+  width: 350px;
+  height: 130px;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+#wrap .slides > .slides-container > li > a > div > h2,
+#wrap .slides > .slides-container > li > a > div > p {
+  text-indent: -9999px;
+}
+#wrap .slides > .slides-container > li:nth-child(1) {
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  background-image: url(./../images/banner_1.jpeg);
+}
+#wrap .slides > .slides-container > li:nth-child(2) {
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  background-image: url(./../images/banner_2.jpeg);
+}
+#wrap .slides > .slides-container > li:nth-child(3) {
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  background-image: url(./../images/banner_3.jpeg);
+}
+#wrap .slides > .slides-container > li:nth-child(4) {
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  background-image: url(./../images/banner_4.jpeg);
+}
+#wrap .slides > .slides-container > li:nth-child(5) {
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  background-image: url(./../images/banner_5.jpeg);
+}
+#wrap .slides > .slides-container > li:nth-child(6) {
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  background-image: url(./../images/banner_6.jpeg);
+}
+#wrap .slides > .slides-container > li:nth-child(7) {
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  background-image: url(./../images/banner_7.jpeg);
+}
+#wrap .slides > .slides-pagination {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 338px;
+  margin-left: -169px;
+}
+#wrap .slides > .slides-pagination > li {
+  width: 44px;
+  background-image: url(./../images/btn.gif);
+}
+#wrap .slides > .slides-pagination > li.on {
+  background-position: 0 -26px;
+}
+#wrap .slides > .slides-pagination > li > a {
+  display: block;
+  height: 26px;
+  text-indent: -9999px;
+}/*# sourceMappingURL=style.css.map */

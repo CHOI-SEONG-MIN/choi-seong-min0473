@@ -1,0 +1,155 @@
+#wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+#wrap > header > h1 {
+  margin-bottom: 20px;
+  color: #222;
+  line-height: 70px;
+  font-size: 50px;
+  text-align: center;
+}
+#wrap > section.game {
+  position: relative;
+  width: 1000px;
+  height: 830px;
+}
+#wrap > section.game > .frame {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url(./../images/room1.jpg);
+  background-size: cover;
+  text-indent: -9999px;
+}
+#wrap > section.game > .frame > .mosquito {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 50px;
+  background-image: url(./../images/mosquito.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#wrap > section.game > .container {
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+  bottom: 0;
+  width: 1000px;
+  height: 120px;
+}
+#wrap > section.game > .container > .start {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(253, 0, 0, 0.7);
+}
+#wrap > section.game > .container > .start:hover {
+  background-color: rgba(253, 0, 0, 0.8);
+}
+#wrap > section.game > .container > .count {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  text-shadow: 0px 0px 20px #fff;
+  background-color: #222;
+  border-radius: 5px;
+}
+#wrap > section.game > .container > .score {
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 80px;
+  width: 200px;
+  height: 100px;
+  color: #222;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+#wrap > section.game > .level {
+  position: absolute;
+  left: 50%;
+  margin-left: -375px;
+  bottom: 18px;
+  width: 250px;
+  height: 100px;
+  box-sizing: border-box;
+}
+#wrap > section.game > .level > p {
+  color: #222;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+}
+#wrap > section.game > .level > button {
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+#wrap > section.game > .level > button.Lv_1 {
+  left: 10px;
+  background-color: rgba(255, 166, 0, 0.5);
+}
+#wrap > section.game > .level > button.Lv_1:hover, #wrap > section.game > .level > button.Lv_1.on {
+  background-color: rgb(255, 165, 0);
+}
+#wrap > section.game > .level > button.Lv_2 {
+  left: 90px;
+  background-color: rgba(255, 255, 0, 0.55);
+}
+#wrap > section.game > .level > button.Lv_2:hover, #wrap > section.game > .level > button.Lv_2.on {
+  background-color: rgb(255, 255, 0);
+}
+#wrap > section.game > .level > button.Lv_3 {
+  left: 170px;
+  background-color: rgba(173, 255, 47, 0.6);
+}
+#wrap > section.game > .level > button.Lv_3:hover, #wrap > section.game > .level > button.Lv_3.on {
+  background-color: rgb(173, 255, 47);
+}
+#wrap > section.game > .level > button.on {
+  color: #333;
+  font-weight: 600;
+  border: 3px solid #555;
+}
+#wrap cursor {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.2s, border-color 0.2s, border-radius 0.2s, transform 0.6s;
+}
+#wrap > footer > address {
+  width: 100%;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

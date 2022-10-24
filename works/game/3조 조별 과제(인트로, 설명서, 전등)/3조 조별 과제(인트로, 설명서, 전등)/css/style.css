@@ -1,0 +1,318 @@
+@charset "UTF-8";
+#wrap_intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../images/autumn.jpg);
+  background-size: cover;
+}
+#wrap_intro > .container {
+  position: absolute;
+  top: 50%;
+  margin-top: -350px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 700px;
+  color: #fff;
+}
+#wrap_intro > .container:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#wrap_intro > .container > h1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 50px;
+  z-index: 10;
+}
+#wrap_intro > .container > p {
+  position: absolute;
+  left: 25px;
+  line-height: 50px;
+  font-size: 23px;
+  z-index: 10;
+  font-weight: 600;
+}
+#wrap_intro > .container > p:nth-of-type(1) {
+  top: 120px;
+}
+#wrap_intro > .container > p:nth-of-type(2) {
+  top: 400px;
+}
+#wrap_intro > .container > p:nth-of-type(2) > a {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 370px;
+  color: red;
+  font-family: "궁서";
+  font-size: 27px;
+}
+#wrap_intro > .container > p:nth-of-type(2) > a > span {
+  position: absolute;
+  left: 250px;
+  opacity: 20%;
+  -webkit-animation: move 0.8s infinite linear;
+          animation: move 0.8s infinite linear;
+}
+@-webkit-keyframes move {
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    left: 280px;
+    opacity: 100%;
+  }
+}
+@keyframes move {
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    left: 280px;
+    opacity: 100%;
+  }
+}
+#wrap_intro > .container > p:nth-of-type(2) > a:hover > span {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+#wrap {
+  display: none;
+  width: 1000px;
+  margin: 0 auto;
+}
+#wrap > header > h1 {
+  margin-bottom: 20px;
+  color: #222;
+  line-height: 70px;
+  font-size: 50px;
+  text-align: center;
+}
+#wrap > section.game {
+  position: relative;
+  width: 1000px;
+  height: 830px;
+}
+#wrap > section.game > .frame {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url(./../images/room1.jpg);
+  background-size: cover;
+  text-indent: -9999px;
+}
+#wrap > section.game > .frame > .filter {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#wrap > section.game > .frame > .mosquito {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 50px;
+  background-image: url(./../images/mosquito.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#wrap > section.game > .container {
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+  bottom: 0;
+  width: 1000px;
+  height: 120px;
+}
+#wrap > section.game > .container > .start {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(253, 0, 0, 0.7);
+}
+#wrap > section.game > .container > .start:hover {
+  background-color: rgba(253, 0, 0, 0.8);
+}
+#wrap > section.game > .container > .count {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  text-shadow: 0px 0px 20px #fff;
+  background-color: #222;
+  border-radius: 5px;
+}
+#wrap > section.game > .container > .score {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 160px;
+  width: 200px;
+  height: 100px;
+  color: #222;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+#wrap > section.game > .container > .light {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  display: block;
+  background-image: url(./../images/btn_toggle.png);
+  background-position: -125px -148px;
+  width: 148px;
+  height: 52px;
+  text-indent: -9999px;
+}
+#wrap > section.game > .container > p {
+  position: absolute;
+  top: 0;
+  right: 35px;
+}
+#wrap > section.game > .level {
+  position: absolute;
+  left: 50%;
+  margin-left: -375px;
+  bottom: 18px;
+  width: 250px;
+  height: 100px;
+  box-sizing: border-box;
+}
+#wrap > section.game > .level > p {
+  color: #222;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+}
+#wrap > section.game > .level > button {
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+#wrap > section.game > .level > button.Lv_1 {
+  left: 10px;
+  background-color: rgba(255, 166, 0, 0.5);
+}
+#wrap > section.game > .level > button.Lv_1:hover, #wrap > section.game > .level > button.Lv_1.on {
+  background-color: rgb(255, 165, 0);
+}
+#wrap > section.game > .level > button.Lv_2 {
+  left: 90px;
+  background-color: rgba(255, 255, 0, 0.55);
+}
+#wrap > section.game > .level > button.Lv_2:hover, #wrap > section.game > .level > button.Lv_2.on {
+  background-color: rgb(255, 255, 0);
+}
+#wrap > section.game > .level > button.Lv_3 {
+  left: 170px;
+  background-color: rgba(173, 255, 47, 0.6);
+}
+#wrap > section.game > .level > button.Lv_3:hover, #wrap > section.game > .level > button.Lv_3.on {
+  background-color: rgb(173, 255, 47);
+}
+#wrap > section.game > .level > button.on {
+  color: #333;
+  font-weight: 600;
+  border: 3px solid #555;
+}
+#wrap > section.game > .explain_container {
+  position: absolute;
+  left: -380px;
+  top: 50px;
+  width: 300px;
+  height: 200px;
+  background-image: url(./../images/explain.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#wrap > section.game > .explain_container > h3 {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  font-size: 45px;
+  color: #222;
+}
+#wrap > section.game > .explain_container:hover > h3 {
+  color: blue;
+}
+#wrap > section.game > .explain_container:hover > ul {
+  display: block;
+}
+#wrap > section.game > .explain_container > ul {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 400px;
+  height: 700px;
+  color: #222;
+  background-image: url(./../images/paper.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 210px;
+}
+#wrap > section.game > .explain_container > ul > li {
+  position: absolute;
+  top: 280px;
+  left: 50px;
+  width: 300px;
+  font-weight: 700;
+}
+#wrap > section.game > .explain_container > ul > li:nth-of-type(2) {
+  top: 320px;
+}
+#wrap > section.game > .explain_container > ul > li:nth-of-type(3) {
+  top: 360px;
+}
+#wrap cursor {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.2s, border-color 0.2s, border-radius 0.2s, transform 0.6s;
+}
+#wrap > footer > address {
+  width: 100%;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');		
+*{margin: 0;padding: 0;}        
+
+ul,ol,li{list-style: none;}
+a:link,a:visited,a:hover,a:active{
+    color:#222;
+    text-decoration: none;
+}
+
+hr{display: none;}
+address{font-style: normal;}
+
+body{
+    overflow-y: scroll;
+    font-weight: 300;
+    font-size: 13px;
+    font-family: 'Noto Sans KR',돋움;
+    background-color: #fdfcf0;
+}
+
+.text-center{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.sr-only{
+    position: absolute;
+    left: -9999px;
+}

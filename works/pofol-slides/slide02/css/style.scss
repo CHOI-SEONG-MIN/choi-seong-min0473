@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+#wrap{width:1120px;margin:0 auto;}
+
+#slides{
+	overflow: hidden;
+	position: relative;
+	width: 1120px;
+	height: 74px;
+	border: 1px solid #ccc;
+	// outline: 1px solid red;
+
+	>.slides-container{
+		display: flex;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: calc(160px * 9);
+
+		>li{
+			width: 159px;/* 전체폭 160px */
+			padding-left: 1px;
+			background-image: url(./../images/bg_section03.gif);
+			background-position: left 28px;
+			background-repeat: no-repeat;
+
+			&:first-child{background-image: none;}
+
+			&.banner_1>a{background-image: url(./../images/banner_1.jpg);}
+			&.banner_2>a{background-image: url(./../images/banner_2.jpg);}
+			&.banner_3>a{background-image: url(./../images/banner_3.jpg);}
+			&.banner_4>a{background-image: url(./../images/banner_4.jpg);}
+			&.banner_5>a{background-image: url(./../images/banner_5.jpg);}
+			&.banner_6>a{background-image: url(./../images/banner_6.jpg);}
+			&.banner_7>a{background-image: url(./../images/banner_7.jpg);}
+			&.banner_8>a{background-image: url(./../images/banner_8.jpg);}
+			&.banner_9>a{background-image: url(./../images/banner_9.jpg);}
+
+			>a{
+				display: block;
+				height: 74px;
+				line-height: 74px;
+				text-indent: -9999px;
+				text-align: center;
+			}//end of a
+		}//end of li
+
+	}//end of .slides-container
+
+
+	>.slides-navigation{
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 160px;
+		height: 74px;
+		text-indent: -9999px;
+		background-color: #fff;
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		&:hover{background-color: #eee;}
+
+		&.slides-previous{
+			left: 0;
+			background-image: url(./../images/btn_prev.png);
+		}
+
+		&.slides-next{
+			right: 0;
+			background-image: url(./../images/btn_next.png);
+		}
+
+	}//end of .slides-navigation
+}//end of #slides
+
+
+
+
+footer>address{
+	margin-top:20px;
+	font-size:25px;
+	text-align:center;
+}

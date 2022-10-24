@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>멀티미디어 플레이어</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script defer src="./js/function.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="text-center">멀티미디어 플레이어</h1>
+        <section>
+            <video id="myvideo" poster="./images/car.png" controls>
+                <source src="./images/Safemove.mp4" type="video/mp4">
+            </video>
+
+            <div class="controlgroup">
+                <button class="play">처음부터 재생</button>
+                <button class="pause">일시정지</button>
+                <button class="resume">정지부터 재생</button>
+            </div>
+        </section>
+        <address class="text-center">&copy; Designed by 최성민</address>
+    </div>
+</body>
+</html>
