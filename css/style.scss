@@ -79,7 +79,7 @@ $mobile : "screen and (max-width:640px)";
   
   @media #{$mobile}{
     //height: 500px; js에서 동적으로 설정
-    background-image: url(./../images/visual.png);
+    background-image: url(./../images/aboutme/visualed.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
